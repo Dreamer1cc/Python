@@ -7,6 +7,7 @@
 с именем message . Выведите свое сообщение . 
 '''
 
+#А теперь мы просто оставим тут комментарий который требуется по заданию 2-10
 name = 'Caesar'
 message = name + ' once said, "Veni, vidi, \nVici."'
 print(message)
