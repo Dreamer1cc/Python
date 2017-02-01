@@ -23,5 +23,3 @@ print(languages)
 languages.reverse()
 print(languages)
 print(len(languages))
-
-
