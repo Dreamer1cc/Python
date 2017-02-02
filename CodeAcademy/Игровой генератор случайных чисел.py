@@ -1,15 +1,15 @@
 import random
 
 print("Счастливые номер, три номера будет сгенерировано.")
-print("If one of them is a '5', you lose!")
+print("Если один из них '5', ты проиграл!")
 
 count = 0
 while count < 3:
     num = random.randint(1, 6)
     print(num)
     if num == 5:
-        print("Sorry, you lose!")
+        print("Ты проиграл, очень жаль!")
         break
     count += 1
 else:
-    print("You win!")
+    print("И вот наш победитель!")
