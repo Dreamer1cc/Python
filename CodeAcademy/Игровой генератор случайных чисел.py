@@ -1,6 +1,6 @@
 import random
 
-print("Lucky Numbers! 3 numbers will be generated.")
+print("Счастливые номер, три номера будет сгенерировано.")
 print("If one of them is a '5', you lose!")
 
 count = 0
