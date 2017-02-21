@@ -1,4 +1,39 @@
+Running DbDeploy...
+Command line: E:\taniko\Setup.Database\Data\DbClone\dbDeploy.exe "-Q" "E:\taniko\Setup.Database\UpdateLogs\2017.02.02_20.28.59\TablesDeployData.xml" "w2k8r2" "scrooge"
+dbClone.dbDeploy Copyright (c) Lime Systems
+SQL Base schema deploy
+Version 3.2.3.31111
+Connect as trusted login
+Read commands from "TablesDeployData.xml" complete.
+Execute commands at w2k8r2.scrooge
+4 error(s) found.
+Write results into "TablesDeployData.xml" complete.
+ExitCode: 1
 
-ExitCode: 1. Error in Object files; 
-ExitCode: 1. Error in Object files; 
-Error messages: 1; 
+=======================================================
+    Error 102 batch 1 line 558
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutTerminal
+    Error 102 batch 1 line 462
+    (Incorrect syntax near 'THROW'.)
+Compile: 6 error(s) in 6 file(s)
+Total: 6 error(s)
+User rights for objects OK
+Write results to "ObjectsDeployData.xml" Complete
+Done.
+ExitCode: 1
+
+=======================================================
+Done.
+ExitCode: 1
+DB Objects work ended.
+
+
+
+Running postupdate SQL scripts...
+Executing script: Init\!Checks.SQL
+Сервер переименован. Исправить.
+Msg 50000, Level 1, State 16, Line 3, Procedure '', Server 'w2k8r2'
+Error messages: 1
+
+=======================================================
