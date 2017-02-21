@@ -1,0 +1,4 @@
+
+ExitCode: 1. Error in Object files; 
+ExitCode: 1. Error in Object files; 
+Error messages in init; 
