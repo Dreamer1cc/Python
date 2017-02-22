@@ -170,7 +170,7 @@ Error messages: 0
 Queries count: 9
 
 Executing script: Init\_InitCalculationAlgorithmTypes.SQL
-Error messages: 0
+Error messages: 10
 Queries count: 5
 
 Executing script: Init\_CntBranchs.SQL
@@ -234,7 +234,7 @@ Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'w2k8r2'
 Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'w2k8r2'
 Свойства	[Clients.TYPEPUBLIC_2F]	в базе отличаются от заданных в настройках
 Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'w2k8r2'
-Error messages: 0
+Error messages: 9
 Queries count: 3
 
 Executing script: Init\_CntAmounts.SQL
