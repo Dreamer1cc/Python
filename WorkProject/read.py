@@ -41,6 +41,7 @@ def read_logs(filename):
         with open(outputfile, 'w') as file_object:
             for message in messages:
                 file_object.write(message) 
+        print("Errors wrote into the file " + outputfile)
 
 # read_logs("update_log.txt")
 
