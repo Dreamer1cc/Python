@@ -215,3 +215,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 *.sublime-workspace
+Chapter10/log_analitics.txt
+WorkProject/log_analysis.txt
