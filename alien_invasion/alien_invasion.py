@@ -1,6 +1,7 @@
 import sys
 
 import pygame
+from pygame.sprite import Group 
 
 from settings import Settings
 from ship import Ship
@@ -14,11 +15,19 @@ def run_game():
         (ai_settings.screen_width, ai_settings.screen_height))
     pygame.display.set_caption("Alien Invasion")
     # Создание корабля.
-    ship = Ship(screen)
+    ship = Ship(ai_settings, screen)
+    # Выстрелы
+    bullets = Group()
     # Запуск основного цикла игры.
     while True:
         # Отслеживание событий клавиатуры и мыши.
-        gf.check_events(ship)
+        gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        gf.update_screen(ai_settings, screen, ship)
+        bullets.update()
+        # Удаление пуль, вышедших за край экрана.
+        for bullet in bullets.copy():
+            if bullet.rect.bottom <= 0:
+                bullets.remove(bullet)
+        gf.update_screen(ai_settings, screen, ship, bullets)
+
 run_game()
