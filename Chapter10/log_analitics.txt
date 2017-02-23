@@ -1,3 +1,16 @@
+New Schemas complete
+New Groups complete
+New Types complete
+New Tables complete
+New Fields complete
+New Indexes complete
+New FK complete
+New CHECKS complete
+New DEFAULTS complete
+New Rights complete
+Write results into "TablesDeployData.xml" complete.
+ExitCode: 0
+
 Running DbDeploy...
 Command line: E:\taniko\Setup.Database\Data\DbClone\dbDeploy.exe "-Q" "E:\taniko\Setup.Database\UpdateLogs\2017.02.02_20.28.59\TablesDeployData.xml" "w2k8r2" "scrooge"
 dbClone.dbDeploy Copyright (c) Lime Systems
@@ -11,6 +24,19 @@ Write results into "TablesDeployData.xml" complete.
 ExitCode: 1
 
 =======================================================
+  S080Ext
+    Error 195 batch 0 line 5
+    ('TRY_CAST' is not a recognized built-in function name. Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.)
+  sc_FUIB_autopilot
+    Error 102 batch 1 line 363
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutAcceptor
+    Error 102 batch 1 line 1001
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutHolding
+    Error 102 batch 1 line 263
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutLegalEntity
     Error 102 batch 1 line 558
     (Incorrect syntax near 'THROW'.)
   ui_SyncInfoforAMSaboutTerminal
@@ -35,5 +61,6 @@ Executing script: Init\!Checks.SQL
 Сервер переименован. Исправить.
 Msg 50000, Level 1, State 16, Line 3, Procedure '', Server 'w2k8r2'
 Error messages: 1
+
 
 =======================================================

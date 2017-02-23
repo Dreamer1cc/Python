@@ -215,3 +215,8 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 *.sublime-workspace
+Chapter10/log_analitics.txt
+WorkProject/log_analysis.txt
+Chapter10/update_log.txt
+Chapter10/update_log.txt
+pygame-1.9.3-cp35-cp35m-win_amd64.whl
