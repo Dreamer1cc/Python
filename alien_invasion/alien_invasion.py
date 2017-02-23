@@ -25,9 +25,7 @@ def run_game():
         ship.update()
         bullets.update()
         # Удаление пуль, вышедших за край экрана.
-        for bullet in bullets.copy():
-            if bullet.rect.bottom <= 0:
-                bullets.remove(bullet)
+        gf.update_bullets(bullets) 
         gf.update_screen(ai_settings, screen, ship, bullets)
 
 run_game()
