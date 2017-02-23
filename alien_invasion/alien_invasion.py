@@ -6,7 +6,7 @@ from settings import Settings
 from ship import Ship
 import game_functions as gf
 
-def run_game():    
+def run_game():
  # Инициализирует pygame, settings и объект экрана. 
     pygame.init()
     ai_settings = Settings()
@@ -16,8 +16,9 @@ def run_game():
     # Создание корабля.
     ship = Ship(screen)
     # Запуск основного цикла игры.
-    while True:        
+    while True:
         # Отслеживание событий клавиатуры и мыши.
-        gf.check_events()
+        gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings, screen, ship)
 run_game()
