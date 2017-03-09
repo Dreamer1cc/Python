@@ -6,7 +6,6 @@ def read_logs(filename):
     outputfile = 'log_analysis.txt'
     messages = []
     apendix = "\n=======================================================\n"
-    er_count = 0
     try:
         with open(inputfile) as file_object:
             lines = file_object.readlines()
