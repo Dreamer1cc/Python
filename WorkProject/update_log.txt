@@ -1,0 +1,1676 @@
+Папка логирования процесса обновления: 'D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59'
+ПРЕДУПРЕЖДЕНИЕ: Включен режим игнорирования ошибок!
+Updating SRV-SQL-B\E12_CP1251:EDC_3S
+Preupdate scripts list is empty. Execution skipped.
+
+
+Executing DB Schema work.
+
+Running DbImage...
+Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbClone\dbImage.exe "SRV-SQL-B\E12_CP1251" "EDC_3S" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesCurrentImage.xml"
+dbClone.dbImage Copyright (c) Lime Systems
+SQL DataBase schema reader
+Version 3.2.6.30759
+Connect as trusted login
+Process versions complete.
+Read data schema from SRV-SQL-B\E12_CP1251.EDC_3S complete.
+Write image into D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesCurrentImage.xml complete.
+ExitCode: 0
+
+Running DbCompare...
+Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbClone\dbCompare.exe "-K" "-Q" "-G" "-F" "-R" "-C" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\Model\TablesModel.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesCurrentImage.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesDeployData.xml"
+dbClone.dbCompare Copyright (c) Lime Systems
+SQL DataBase schema compare
+Version 3.2.6.30759
+Read image from "TablesModel.xml" complete.
+Read image from "TablesCurrentImage.xml" complete.
+Compare
+Image from ZEUS\DEV12.SC_MODEL_STABLE_3C created 24.02.2017 11:53:57
+With image SRV-SQL-B\E12_CP1251.EDC_3S created 24.02.2017 14:37:17
+Old FK complete
+Check PK and CLUSTERED complete
+Old Indexes complete
+Old CHECKS complete
+Old DEFAULTS complete
+Old Fields complete
+New Schemas 0%
+New Schemas 50%
+New Schemas 100%
+New Schemas complete
+New Groups complete
+New Types complete
+New Tables complete
+New Fields complete
+New Indexes complete
+New FK complete
+New CHECKS complete
+New DEFAULTS complete
+New Rights complete
+Write results into "TablesDeployData.xml" complete.
+ExitCode: 0
+
+Running DbDeploy...
+Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbClone\dbDeploy.exe "-Q" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesDeployData.xml" "SRV-SQL-B\E12_CP1251" "EDC_3S"
+dbClone.dbDeploy Copyright (c) Lime Systems
+SQL Base schema deploy
+Version 3.2.3.30760
+Connect as trusted login
+Read commands from "TablesDeployData.xml" complete.
+Execute commands at SRV-SQL-B\E12_CP1251.EDC_3S
+1 error(s) found.
+Write results into "TablesDeployData.xml" complete.
+ExitCode: 1
+DB Schema work ended.
+
+
+
+Executing DB Objects work.
+
+Running DbCopy...
+Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbObjects\dbCopy.exe "-Q" "SRV-SQL-B\E12_CP1251" "EDC_3S" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsCurrentImage.xml"
+dbObjects.dbCopy (c) Lime Systems 2004
+SQL objects copy
+Version 3.2.3.31122
+Connect as trusted login
+Connect to "SRV-SQL-B\E12_CP1251.EDC_3S" Complete
+Read legend Complete
+Read user rights Complete
+Read system catalog Complete
+Parse objects Complete
+Write image to "ObjectsCurrentImage.xml" Complete
+Done.
+ExitCode: 0
+
+Running DbProcess...
+Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbObjects\dbProcess.exe "-Q" "-K" "-V" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\Model\ObjectsModel.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsCurrentImage.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsDeployData.xml"
+dbObjects.dbProcess (c) Lime Systems 2004
+SQL objects paste
+Version 3.2.7.31123
+Read image from "ObjectsModel.xml" Complete
+Read image from "ObjectsCurrentImage.xml" Complete
+Compare
+Image from ZEUS\DEV12.SC_MODEL_STABLE_3C created 24.02.2017 11:52:41
+With image SRV-SQL-B\E12_CP1251.EDC_3S created 24.02.2017 14:38:09
+Objects Complete
+New Rights Complete
+Write commands to "ObjectsDeployData.xml" Complete
+Done.
+ExitCode: 0
+
+Running DbPaste...
+Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbObjects\dbPaste.exe "-Q" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsDeployData.xml" "SRV-SQL-B\E12_CP1251" "EDC_3S"
+dbObjects.dbPaste (c) Lime Systems 2004
+SQL objects paste
+Version 3.2.7.31123
+Connect as trusted login
+Read commands from "ObjectsDeployData.xml" Complete
+Connect to "SRV-SQL-B\E12_CP1251.EDC_3S" Complete
+Paste results of compare
+Image from ZEUS\DEV12.SC_MODEL_STABLE_3C created 24.02.2017 11:52:41
+With image SRV-SQL-B\E12_CP1251.EDC_3S created 24.02.2017 14:38:09
+Objects Complete
+Session 0 done, no error(s) found
+Objects Complete
+Session 1 done, no error(s) found
+Compile: No error(s) found
+Total: No error(s) found
+User rights for objects OK
+Write results to "ObjectsDeployData.xml" Complete
+Done.
+ExitCode: 0
+DB Objects work ended.
+
+
+
+Running postupdate SQL scripts...
+Executing script: Init\!Checks.SQL
+Error messages: 0
+Queries count: 14
+
+Executing script: Common\_MESSAGE.SQL
+Error messages: 0
+Queries count: 39
+
+Executing script: Common\_TYPEDEF.SQL
+Error messages: 0
+Queries count: 5
+
+Executing script: Init\_CommonRights.SQL
+Error messages: 0
+Queries count: 32
+
+Executing script: Init\_InitCore.SQL
+Error messages: 0
+Queries count: 38
+
+Executing script: Init\_InitCPC.SQL
+Error messages: 0
+Queries count: 9
+
+Executing script: Init\_InitCalculationAlgorithmTypes.SQL
+Error messages: 0
+Queries count: 5
+
+Executing script: Init\_CntBranchs.SQL
+Error messages: 0
+Queries count: 10
+
+Executing script: Init\_CntUsers.SQL
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\_CntClients.SQL
+Свойства	[Clients.BANK_MFO]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.BOOK_NAME]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.BOOK_PHONE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.BOSS_NAME]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.BOSS_PHONE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.CITY_CODE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.CreditApplicant]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.ECON_BRANCH_KIND]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.ECONOMY_BRANCH]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.ECONOMY_SECTION]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.ECONOMY_SECTION]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.EDUCATION]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.ExclusionLiq]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.FOREIGN_BNK_CODE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.FOREIGN_BNK_CODE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.GENDER]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.INSIDER_MARK]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Тип	данных	[Clients.IntegralIndex(23)]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Тип	данных	[Clients.JUR_ADDRESS]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.JUR_ADDRESS]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Тип	данных	[Clients.JUR_ADDRESS]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.JUR_ADDRESS]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.K015]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.K050]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.LOCATION_ID]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.PERSONAL_NAME]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.PERSONAL_NAME]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.PHONES]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.REAL_ADDRESS]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.REG_DATE_COMMIT]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.REG_DATE_TAX]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.TAX_CODE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Свойства	[Clients.WORK_ADDRESS]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_CntAmounts.SQL
+Error messages: 0
+Queries count: 7
+
+Executing script: Init\_CntBills.SQL
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\_CntTransfers.SQL
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_ViewSource.SQL
+Error messages: 0
+Queries count: 7
+
+Executing script: Init\_InitForms.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_InitFormTags.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_InitDayTasks.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\ClientKinds.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\Convert\Amounts.PayName.SQL
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\Make_PersonDocType.sql
+36 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_Reffers.sql
+Error messages: 0
+Queries count: 24
+
+Executing script: Init\Convert\DropRefferViews.sql
+Error messages: 0
+Queries count: 104
+
+Executing script: Init\_ClientReestr.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_InitProfix.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_InitMSFO.sql
+0 rows(s) affected.
+0 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\Make_BNK_RATING.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_CL_KIND.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_CL_RATING.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_DEPRECIATIONACTIVE.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_F39.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_F40.sql
+36 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_F44.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_F73.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_FAIRCOSTTYPE.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_FD4.sql
+52 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_FE0.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_Invest_Rating.sql
+96 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\Make_MSFO_Tables.sql
+Удаляем значения
+Msg 50000, Level 1, State 1, Line 32, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+И заголовок
+Msg 50000, Level 1, State 1, Line 41, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+view MSFO_Tables построено
+Msg 50000, Level 1, State 1, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\Make_PassportInfo.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_S080Ext.sql
+Удаляем значения
+Msg 50000, Level 1, State 1, Line 42, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+И заголовок
+Msg 50000, Level 1, State 1, Line 46, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Обновление произведено успешно!
+Msg 50000, Level 1, State 1, Line 146, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\Make_S280.sql
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\Make_STIFF_TYPE.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Make_StiffKind.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\make_target_bank.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\Make_BillsSystems.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitSocialPayments.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_InitRestructuring.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\AGREEMENTS\AgreementsBase.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsByChoiceGroup.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsByClientType.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsByMasterBranch.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsByTurnsExists.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsByTurnsNotExists.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsInCustodianSystem.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\AMOUNTS\AmountsWithInactiveUser.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\AMOUNTS\SpecificAmounts_2620_2625.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\BILLS\BillsAfterOverTime.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByCashSymbol.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByClientGroup.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByClientNBU104.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByClientNBU328.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByConnotationParam.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByDecisions.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\BILLS\BillsByDiefferenceCrncySumEventsToDocument.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByExecEventsToDocument.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByNote.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByPurpose.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByTaxPaper.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\BILLS\BillsByTime.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByYearCorrectFlag.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsOverTime.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsREPOOffBalance.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\TaxAdon6Credit.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\TaxAdon6Debit.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\TransfersByCtl.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\CB\CbByClientsFromBranchSuits.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\CFX\CFXAgreementByBillId.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\CFX\CFXAgreementCalcDate.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\CFX\CFXAgreementDischDate.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\CFX\CFXDemandBy2CControl.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\CFX\CFXDemandByBillId.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\CLIENTS\ClientsWithInactiveUser.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\EMP\INDOC_Filters.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\EMP\OUTDOC_Filters.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\FATF\FATW_Operations_Branches.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\FATF\FATW_Operations_EDRPOY.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\FATF\FATW_Operations_OPR_VID2.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\IE3\IE3File98Contragent.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\LSWIFT\SWRequestByBillState.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\LSWIFT\SWRequestByHaveMT.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\LSWIFT\SWRequestByOurGarant.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\REPORTS\NBU314\NBU314ByClientNameLike.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\REPORTS\NBU314\NBU314ByEdrpouReportLike.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\REPORTS\NBU314\NBU314ByExistInAdditional4.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\MidasTaxAccounts.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TAX\TaxConformByStroka.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TAX\TaxCreatedInDateXML.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxLand_AdvNumber.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxLand_Code.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxLand_Id.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxLand_LocalGovCode.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxLand_Moniker.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxLand_TaxCode.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TAX\TaxPaperZeroPDV.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\PacketByExt_ProductCards.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\PacketByExt_ProductCardsBPK.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\PacketByExt_ProductPackage.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\ProductByExt_ProductCards.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\ProductByExt_ProductCardsBPK.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\ProductByExt_ProductPackage.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyAccLinkKindExistRest.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByActiveSystems.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByAgreePacket.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByCBApp.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByClientCode.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByClientConnotationValue.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByClientName.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByClientNo.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByConnotationValue.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByCreditClass.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByCreditPawnKind.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByCreditRisk.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByDayDateEvent.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByITMAccount.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\TREATY\TreatyBylinked.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByLinkKind.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByLocalRuleType.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByMasterBranch.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByNote.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByNotFounding.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByPasiveSystems.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByProduct.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByRateLimits.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByRest.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByRisk.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyByRuleType.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByScheduleEventType.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\TREATY\TreatyBySFCredit.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\TREATY\TreatyBySystems.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByTreatyAppType.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\FILTERS\TREATY\TreatyByTypeFlag.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyByYearDays.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyCreditsSF.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyCreditsWhole.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyGuaranteeWhole.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyLinksByTreaty.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyMBKWhole.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyOpenedByDate.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyRefuseInsurance.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatysWithInactiveAmountUser.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatysWithInactiveUser.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithActiveLocalRule.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithClientRepoParam.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithConfirmedRests.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithExpirationRests.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithLocalRuleByCode.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithNoCalcFlag.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithNoLimitCorrectFlag.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithNoLinkedTopic.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithNoLocalRule.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithNotClosed.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithoutActiveApps.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithoutCharacteristics.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithOutConfirmedRests.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithOutExpirationRests.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithoutLocalRuleType.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithoutRuleType.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithReview.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithUnpaidOccasions.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithZeroDebtOnDate.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\TreatyWithZeroDebtOnPeriod.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IEAgreementsByBranch.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IEAgreementsByCode.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IEAgreementsBySystem.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IEAgreementsByTopic.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IEAgreementsByTopicList.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyByBranch.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyByClientCode.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyByClientName.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyByCode.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyByCurrency.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyBySystem.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FILTERS\TREATY\IEDATA\IETreatyByTopicList.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FATF\FATF_Client_Profile.sql
+23 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FATF\FATF_Packets.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FATF\FATF_REFFER.sql
+Error messages: 0
+Queries count: 28
+
+Executing script: INIT\FATF\InitAML.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\FATF\InitRiskMan.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoActionKinds.sql
+9 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoChecks.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\REPO\_initRepoErrors.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoLinkKinds.sql
+85 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoStoreFondRCities.sql
+1226 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoTableCells.sql
+Расставлено Id таблиц - 0
+Msg 50000, Level 1, State 1, Line 27, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoTableKinds.sql
+91 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\_initRepoTimes.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\REPO\_initRepoTopics.sql
+Error messages: 0
+Queries count: 50
+
+Executing script: INIT\REPO\_initRepoWizardParams.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\REPO\_repoRowItemKind.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\REPO\_repoSegments.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\REPO\MSFO\_CntMSFO.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\REPO\MSFO\_InitMSFO.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFOColumns.sql
+20 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFOForms.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\REPO\MSFO\_InitMSFOParamKinds.sql
+16 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFORows.sql
+255 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFORules.sql
+2154 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFOScripts.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFOTopicsMappingAdd07.sql
+543 rows(s) affected.
+0 rows(s) affected.
+543 rows(s) affected.
+Error messages: 0
+Queries count: 5
+
+Executing script: INIT\REPO\MSFO\_InitMSFOTopicsMappingPr08.sql
+463 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\MSFO\_InitMSFOTopicsMappingPr37.sql
+276 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\NoRezReestrInit.sql
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\Convert\ColumnsForYearTables.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\BAL\INIT\01.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: SYSTEMS\BUDGET\INIT\InitTables.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\IE3\INIT\AvalGtd.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\IE3\INIT\Convert.sql
+43 rows(s) affected.
+Error messages: 0
+Queries count: 4
+
+Executing script: SYSTEMS\IE3\INIT\init.sql
+Error messages: 0
+Queries count: 11
+
+Executing script: SYSTEMS\MAIL\INIT\Init.sql
+Error messages: 0
+Queries count: 7
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\CardBlockTypes.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\CardRegions.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\Connotations.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\initAcquiring.sql
+Error messages: 0
+Queries count: 8
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\initClearing.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 4
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\initTransactions.sql
+Error messages: 0
+Queries count: 6
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\initWF.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\Reffers.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\TreatyCardStates.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\TREATYCARDS\INIT\_InitAccAssigment.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: SYSTEMS\PST\INIT\Init.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\IFRS\INIT\Init.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 5
+
+Executing script: SYSTEMS\BANKAGENTS\INIT\init.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\BOS\INIT\Init_BOS_REFFRES.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\PAYROLLS\INIT\PayrollPurposeChargeType.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Systems\Traces\Init\InitTraces.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitElections.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_ItemOwners.SQL
+Error messages: 0
+Queries count: 24
+
+Executing script: Init\CntWizards.SQL
+Error messages: 0
+Queries count: 120
+
+Executing script: Init\_InitPhoneTypes.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Systems\CFX\Init\1.InitDefaultRows.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 33
+
+Executing script: Systems\CFX\Init\2.InitKinds.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 4
+
+Executing script: Systems\CFX\Init\3.InitGlobalParams.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Systems\CFX\Init\5.Init.sql
+19 rows(s) affected.
+Error messages: 0
+Queries count: 40
+
+Executing script: Systems\CFX\Init\6.InitClientAccs.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Systems\CFX\Init\7.InitRights.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Systems\LSW\Init\init0.sql
+16 rows(s) affected.
+0 rows(s) affected.
+1 rows(s) affected.
+0 rows(s) affected.
+0 rows(s) affected.
+0 rows(s) affected.
+0 rows(s) affected.
+0 rows(s) affected.
+Error messages: 0
+Queries count: 95
+
+Executing script: Systems\LSW\Init\InitRights.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_InitTreaty.sql
+0 rows(s) affected.
+5 rows(s) affected.
+0 rows(s) affected.
+Обновлено значений шаблон/система/клиент для доп.соглашений, [0] шт.
+Msg 50000, Level 1, State 0, Line 41, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 0
+Queries count: 48
+
+Executing script: Init\_InitOccasions.sql
+Error messages: 0
+Queries count: 13
+
+Executing script: Init\_CntTreaty.sql
+Попытка смены типа реквизита [Treaty.RevalPawnSum] с [7] на [2] при наличии значений, Id [1460]
+Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+Запрещено модифицировать ключевые поля записей
+Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+The transaction ended in the trigger. The batch has been aborted.
+Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
+Попытка смены типа реквизита [Treaty.BOP_COMP] с [7] на [5] при наличии значений, Id [1226]
+Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+Запрещено модифицировать ключевые поля записей
+Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+The transaction ended in the trigger. The batch has been aborted.
+Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
+Попытка смены типа реквизита [Agreements.TreatyLongationHistoryRate] с [9] на [1] при наличии значений, Id [2754]
+Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+Запрещено модифицировать ключевые поля записей
+Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+The transaction ended in the trigger. The batch has been aborted.
+Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
+Попытка смены типа реквизита [treaty.NumberDays] с [5] на [1] при наличии значений, Id [1894]
+Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+Запрещено модифицировать ключевые поля записей
+Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
+The transaction ended in the trigger. The batch has been aborted.
+Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 12
+Queries count: 626
+
+Executing script: Init\Make_CredInfoPeriodRef.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Convert\TreatyLinks.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_InitTreatyPapers.sql
+Инициализация систем
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Договорная система Id 7166 имеет код не [SP-OPTION-CERT], а [SP-BANK-BOND]
+Msg 50000, Level 1, State 16, Line 131, Procedure 'sc_SetTreatySystem', Server 'SRV-SQL-B\E12_CP1251'
+Договорная система Id 7155 имеет код не [SP-CASH], а [SP-IN-BOND]
+Msg 50000, Level 1, State 16, Line 131, Procedure 'sc_SetTreatySystem', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperCases
+Msg 0, Level 1, State 0, Line 21, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperOperationGroups
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperOperations
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+создание связи клиентов Хранитель ЦБ
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+создание связи клиентов Владелец ЦБ
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperTypes
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание общих фильтров для заведение котловых счетов
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника EmissionStatuses
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника EmitentTypes
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника StockExchangeMembers
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperSubTypes
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника StockExchangePlaces
+Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Справочник периодичностей выплат купонов
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Справочник выплаты дохода (рассчитывается исходя из данных эмиссии для резерва)
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Справочник видов гарантии/обеспечения для резерва
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Справочник условий операций для ЦБ
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CNoteReservations
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника NonbankTreatyKinds (CreditGrade)
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperTreatyStatus
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperTreatyStatusJumpTable
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника TypeFunds
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника KindFunds
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника Ratings
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника InternationalRatings
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperCommissions
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperActionRegistry
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperActionForForward
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperLimitLevels
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника EconomicActivities
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperLimitKinds
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника PaperLimitLevelsDefaults
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создания ролей участников фондового рынка	в эмиссии векселей
+Msg 0, Level 1, State 0, Line 11, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Типы связей клиентов и договоров
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Установка глобальных параметров
+Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Новые линки счетов для договорной подсистемы
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Заполнение настроечной таблицы импорта Excel
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на Шаблоны
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на Clients
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на AgreePatterns
+Msg 0, Level 1, State 0, Line 419, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на TreatyEmissions
+Msg 0, Level 1, State 0, Line 458, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Конвертация старых типов эмиссий в новые
+Msg 0, Level 1, State 0, Line 829, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на Treaty
+Msg 0, Level 1, State 0, Line 841, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на TreatyPaperRates
+Msg 0, Level 1, State 0, Line 2481, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Установка EventKind
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Стандартные действия системы SetAgreeActionType
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Флаг счет клиента в WorkFlowAccounts перводит на новые значения
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Инициализация ItemKind для эмиссий ЦБ
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Для отчетов в ДКЦПФР (Экспорт в АФР-ТЦП)
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Настройка бизнес-правил
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Депозитрарий Ценных бумаг НБУ
+Msg 0, Level 1, State 0, Line 64, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Дополнение тэгов для печатных форм
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 2
+Queries count: 51
+
+Executing script: Init\_InitWF.sql
+132 rows(s) affected.
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_InitTreatyProducts.SQL
+0 rows(s) affected.
+13 rows(s) affected.
+2 rows(s) affected.
+Error messages: 0
+Queries count: 29
+
+Executing script: Init\_InitTreatyCustodianOperations.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_InitTreatyCustodian.sql
+Установка глобальных параметров
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание группы по-умолчанию в группах клиентов (CustodianClientGroups)
+Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+создаем отдельную группу клиентов для быстрого добавления технических клиентов
+Msg 0, Level 1, State 0, Line 27, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianTreatyTypes
+Msg 0, Level 1, State 0, Line 43, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание состояний допсоги TreatyStates
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianTreatyAppsTypes
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание шаблонов системы
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон APP_ASSETS
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон APP_CLEARING
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон APP_DUAL_SIGNATURE
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон APP_REGISTER_DEPO
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон APP_STATEMENT
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон APP_TARIFF
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон TC_DEPONENT
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон TC_INFO_SERVICE
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на шаблон TC_ISSUER
+Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
+Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
+Ошибка создания установки реквизита на базовый шаблон
+Msg 0, Level 1, State 0, Line 127, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+создание связи клиентов ИСИ-КУА
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+создание связи клиентов КУА-НПФ
+Msg 0, Level 1, State 0, Line 9, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+создание связи договоров с доп.согами
+Msg 0, Level 1, State 0, Line 15, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на Treaty
+Msg 0, Level 1, State 0, Line 23, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на TreatyOperations
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на Clients
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Доп.реквизиты на TreatyEmissions
+Msg 0, Level 1, State 0, Line 97, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianSendTypes
+Msg 0, Level 1, State 0, Line 117, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianDepositories
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianOperationsStatuses
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianGroupUsers
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianBaseOper
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianConditionOptions
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianManagerKinds
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianDividendsKinds
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianBranches
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianRequester
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianPawnee
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Создание справочника CustodianContractor
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Настройка бизнес-правил
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Инициализация операций для Хранитель ЦБ
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Инициализация тэгов для печатных форм
+Msg 0, Level 1, State 0, Line 8, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+инициализация ItemKinds для каждого вида операций
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 10
+Queries count: 23
+
+Executing script: Init\_Borg.SQL
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitTreatyRuleTypeForms.sql
+Error messages: 0
+Queries count: 122
+
+Executing script: Init\_InitTreatyScenarioTypes.sql
+Error messages: 0
+Queries count: 20
+
+Executing script: Init\_InitTreatyScenarioChecks.sql
+Error messages: 0
+Queries count: 18
+
+Executing script: Init\_InitTreatyScheduleForms.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\Convert\Treaty\Papers\EmissionApps.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitLoroPayments.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_InitTreatyMacros.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\Convert\Treaty\_TreatyProductScenarios.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitReserve.sql
+Error messages: 0
+Queries count: 34
+
+Executing script: Init\_InitAI_Acts.sql
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\_InitSPERolls.sql
+Error messages: 0
+Queries count: 8
+
+Executing script: Init\_InitBankProductType.sql
+Error messages: 0
+Queries count: 5
+
+Executing script: Init\_InitTreatyLoyaltyKinds.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\Convert\ConvertSc3Applications.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\_AccessConfig.sql
+Error messages: 0
+Queries count: 23
+
+Executing script: Init\Make_CreditTopicsReport.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitBillKindForms.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\insconn.SQL
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\insreff.SQL
+Заглавная запись(OwnerId = 0, Code = 'PB_ONE_ACC') уже существует.
+Msg 50000, Level 1, State 0, Line 68, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настроек лоро-счетов(Code = 'PB_ONE_LORO') уже существует.
+Msg 50000, Level 1, State 0, Line 103, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настроек ностро-счетов(Code = 'PB_ONE_NOSTRO') уже существует.
+Msg 50000, Level 1, State 0, Line 127, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настроек кассовых счетов(Code = 'PB_ONE_CASH') уже существует.
+Msg 50000, Level 1, State 0, Line 151, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настройки кода нашего банка(Code = 'PB_BANK_CODE') уже существует.
+Msg 50000, Level 1, State 0, Line 175, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настройки наименования нашего банка(Code = 'PB_BANK_NAME') уже существует.
+Msg 50000, Level 1, State 0, Line 199, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настройки кода валюты(Code = 'PB_CRNCY_TAG') уже существует.
+Msg 50000, Level 1, State 0, Line 223, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настройки флага(Code = 'PB_CLI_FLAG') уже существует.
+Msg 50000, Level 1, State 0, Line 247, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Запись настройки флага констант визарда PB_CONN (Code = 'PB_Conn_Const') уже существует.
+Msg 50000, Level 1, State 0, Line 318, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Успешное завершение выполенния.
+Msg 50000, Level 1, State 0, Line 333, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Завершение работы ...
+Msg 50000, Level 1, State 0, Line 342, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\_InitCBT.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_CB_Init.sql
+Error messages: 0
+Queries count: 5
+
+Executing script: Init\Convert\REPO\RepoFiles.sql
+0 rows(s) affected.
+Error messages: 0
+Queries count: 2
+
+Executing script: Init\Convert\REPO\MSFO_ParamValues.sql
+Error messages: 0
+Queries count: 9
+
+Executing script: Init\Convert\REPO\MSFO_ParamKinds.sql
+Error messages: 0
+Queries count: 17
+
+Executing script: Init\Convert\REPO\MSFO_Sessions.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: Init\_initEMP.sql
+Error messages: 0
+Queries count: 10
+
+Executing script: Init\_InitSMS.sql
+Error messages: 0
+Queries count: 6
+
+Executing script: SYSTEMS\AM\INIT\mkIndicator.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: SYSTEMS\AM\INIT\mkMessage.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\AM\INIT\_initSecurity.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: SYSTEMS\XX\INITS\init1.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\XX\INITS\init_billactions.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: SYSTEMS\XX\INITS\init_billactionsimport.sql
+Error messages: 0
+Queries count: 2
+
+ОШИБКА: Установка обновлений завершилась с ошибками!
+Отправьте логи обновления (файл 'D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\update_log.txt') разработчикам.
+
