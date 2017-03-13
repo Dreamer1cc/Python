@@ -13,8 +13,7 @@ def search_for_parse_exec(lines):
             index_to = index
             er_count = int(line[end_line+16:end_line+17])
             if er_count != 0:
-                if er_count != 0:
-                    w.write_log_to_buffer(
-                        lines, index_from, index_to, messages, apendix
-                        )
+                w.write_log_to_buffer(
+                    lines, index_from, index_to, messages, apendix
+                    )
     return messages
