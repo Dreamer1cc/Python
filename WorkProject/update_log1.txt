@@ -1,32 +1,32 @@
-Папка логирования процесса обновления: 'D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59'
+Папка логирования процесса обновления: 'C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38'
 ПРЕДУПРЕЖДЕНИЕ: Включен режим игнорирования ошибок!
-Updating SRV-SQL-B\E12_CP1251:EDC_3S
+Updating diam-odbvm:scr_dav_v31370
 Preupdate scripts list is empty. Execution skipped.
 
 
 Executing DB Schema work.
 
 Running DbImage...
-Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbClone\dbImage.exe "SRV-SQL-B\E12_CP1251" "EDC_3S" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesCurrentImage.xml"
+Command line: C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\DbClone\dbImage.exe "diam-odbvm" "scr_dav_v31370" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\TablesCurrentImage.xml"
 dbClone.dbImage Copyright (c) Lime Systems
 SQL DataBase schema reader
 Version 3.2.6.30759
 Connect as trusted login
 Process versions complete.
-Read data schema from SRV-SQL-B\E12_CP1251.EDC_3S complete.
-Write image into D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesCurrentImage.xml complete.
+Read data schema from diam-odbvm.scr_dav_v31370 complete.
+Write image into C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\TablesCurrentImage.xml complete.
 ExitCode: 0
 
 Running DbCompare...
-Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbClone\dbCompare.exe "-K" "-Q" "-G" "-F" "-R" "-C" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\Model\TablesModel.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesCurrentImage.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesDeployData.xml"
+Command line: C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\DbClone\dbCompare.exe "-K" "-Q" "-G" "-F" "-R" "-C" "C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\Model\TablesModel.xml" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\TablesCurrentImage.xml" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\TablesDeployData.xml"
 dbClone.dbCompare Copyright (c) Lime Systems
 SQL DataBase schema compare
 Version 3.2.6.30759
 Read image from "TablesModel.xml" complete.
 Read image from "TablesCurrentImage.xml" complete.
 Compare
-Image from ZEUS\DEV12.SC_MODEL_STABLE_3C created 24.02.2017 11:53:57
-With image SRV-SQL-B\E12_CP1251.EDC_3S created 24.02.2017 14:37:17
+Image from ZEUS\DEV16_CP1251.SC_MODEL_STABLE_3_13 created 13.03.2017 12:21:58
+With image DIAM-ODBVM.scr_dav_v31370 created 13.03.2017 19:09:44
 Old FK complete
 Check PK and CLUSTERED complete
 Old Indexes complete
@@ -50,16 +50,16 @@ Write results into "TablesDeployData.xml" complete.
 ExitCode: 0
 
 Running DbDeploy...
-Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbClone\dbDeploy.exe "-Q" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\TablesDeployData.xml" "SRV-SQL-B\E12_CP1251" "EDC_3S"
+Command line: C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\DbClone\dbDeploy.exe "-Q" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\TablesDeployData.xml" "diam-odbvm" "scr_dav_v31370"
 dbClone.dbDeploy Copyright (c) Lime Systems
 SQL Base schema deploy
 Version 3.2.3.30760
 Connect as trusted login
 Read commands from "TablesDeployData.xml" complete.
-Execute commands at SRV-SQL-B\E12_CP1251.EDC_3S
-1 error(s) found.
+Execute commands at diam-odbvm.scr_dav_v31370
+No error(s) found.
 Write results into "TablesDeployData.xml" complete.
-ExitCode: 1
+ExitCode: 0
 DB Schema work ended.
 
 
@@ -67,12 +67,12 @@ DB Schema work ended.
 Executing DB Objects work.
 
 Running DbCopy...
-Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbObjects\dbCopy.exe "-Q" "SRV-SQL-B\E12_CP1251" "EDC_3S" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsCurrentImage.xml"
+Command line: C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\DbObjects\dbCopy.exe "-Q" "diam-odbvm" "scr_dav_v31370" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\ObjectsCurrentImage.xml"
 dbObjects.dbCopy (c) Lime Systems 2004
 SQL objects copy
 Version 3.2.3.31122
 Connect as trusted login
-Connect to "SRV-SQL-B\E12_CP1251.EDC_3S" Complete
+Connect to "diam-odbvm.scr_dav_v31370" Complete
 Read legend Complete
 Read user rights Complete
 Read system catalog Complete
@@ -82,15 +82,15 @@ Done.
 ExitCode: 0
 
 Running DbProcess...
-Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbObjects\dbProcess.exe "-Q" "-K" "-V" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\Model\ObjectsModel.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsCurrentImage.xml" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsDeployData.xml"
+Command line: C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\DbObjects\dbProcess.exe "-Q" "-K" "-V" "C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\Model\ObjectsModel.xml" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\ObjectsCurrentImage.xml" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\ObjectsDeployData.xml"
 dbObjects.dbProcess (c) Lime Systems 2004
 SQL objects paste
 Version 3.2.7.31123
 Read image from "ObjectsModel.xml" Complete
 Read image from "ObjectsCurrentImage.xml" Complete
 Compare
-Image from ZEUS\DEV12.SC_MODEL_STABLE_3C created 24.02.2017 11:52:41
-With image SRV-SQL-B\E12_CP1251.EDC_3S created 24.02.2017 14:38:09
+Image from ZEUS\DEV16_CP1251.SC_MODEL_STABLE_3_13 created 13.03.2017 12:20:46
+With image DIAM-ODBVM.scr_dav_v31370 created 13.03.2017 19:10:33
 Objects Complete
 New Rights Complete
 Write commands to "ObjectsDeployData.xml" Complete
@@ -98,26 +98,55 @@ Done.
 ExitCode: 0
 
 Running DbPaste...
-Command line: D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\Data\DbObjects\dbPaste.exe "-Q" "D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\ObjectsDeployData.xml" "SRV-SQL-B\E12_CP1251" "EDC_3S"
+Command line: C:\Setups\Sc3\3.13.7.0\Setup.Database\Data\DbObjects\dbPaste.exe "-Q" "C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\ObjectsDeployData.xml" "diam-odbvm" "scr_dav_v31370"
 dbObjects.dbPaste (c) Lime Systems 2004
 SQL objects paste
 Version 3.2.7.31123
 Connect as trusted login
 Read commands from "ObjectsDeployData.xml" Complete
-Connect to "SRV-SQL-B\E12_CP1251.EDC_3S" Complete
+Connect to "diam-odbvm.scr_dav_v31370" Complete
 Paste results of compare
-Image from ZEUS\DEV12.SC_MODEL_STABLE_3C created 24.02.2017 11:52:41
-With image SRV-SQL-B\E12_CP1251.EDC_3S created 24.02.2017 14:38:09
+Image from ZEUS\DEV16_CP1251.SC_MODEL_STABLE_3_13 created 13.03.2017 12:20:46
+With image DIAM-ODBVM.scr_dav_v31370 created 13.03.2017 19:10:33
 Objects Complete
-Session 0 done, no error(s) found
+Session 0 done, 9 error(s)
 Objects Complete
-Session 1 done, no error(s) found
-Compile: No error(s) found
-Total: No error(s) found
+Session 1 done, 9 error(s)
+Objects Complete
+Session 2 done, 9 error(s)
+  sc_FUIB_autopilot
+    Error 102 batch 1 line 363
+    (Incorrect syntax near 'THROW'.)
+  tOFACAddressesModify
+    Error 195 batch 0 line 151
+    ('LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'as'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'as'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'as'.)
+  tOFACAlternativesModify
+    Error 195 batch 0 line 96
+    ('LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'as'.)
+  tOFACEntriesModify
+    Error 195 batch 0 line 121
+    ('LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'as'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'as'.)
+  tOFACWordsModify
+    Error 195 batch 0 line 66
+    ('LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'AND'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'AND'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'AND'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'AND'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'AND'. 'LEAD' is not a recognized built-in function name. Incorrect syntax near the keyword 'AND'.)
+  ui_SyncInfoforAMSaboutAcceptor
+    Error 102 batch 1 line 1091
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutHolding
+    Error 102 batch 1 line 263
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutLegalEntity
+    Error 102 batch 1 line 561
+    (Incorrect syntax near 'THROW'.)
+  ui_SyncInfoforAMSaboutTerminal
+    Error 102 batch 1 line 490
+    (Incorrect syntax near 'THROW'.)
+Compile: 9 error(s) in 9 file(s)
+Total: 9 error(s)
 User rights for objects OK
 Write results to "ObjectsDeployData.xml" Complete
 Done.
-ExitCode: 0
+ExitCode: 1
 DB Objects work ended.
 
 
@@ -160,72 +189,84 @@ Error messages: 0
 Queries count: 6
 
 Executing script: Init\_CntClients.SQL
+Тип	данных	[Clients.ADDRESS]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.BANK_MFO]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.BIRTHDAY]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.BOOK_NAME]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.BOOK_NAME]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.BOOK_PHONE]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.BOOK_PHONE]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.BOSS_NAME]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.BOSS_NAME]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.BOSS_PHONE]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.BOSS_PHONE]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.CITY_CODE]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.CreditApplicant]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.CREDITAPPLICANT]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.ECON_BRANCH_KIND]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.ECONOMY_BRANCH]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.ECONOMY_SECTION]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.ECONOMY_SECTION]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.EDUCATION]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.ExclusionLiq]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.EXEC_COMMIT]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.EXEC_COMMIT]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.FOREIGN_BNK_CODE]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.FOREIGN_BNK_CODE]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.FOREIGN_BNK_CODE]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.GENDER]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.INSIDER_MARK]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Тип	данных	[Clients.IntegralIndex(23)]	в базе отличается от заданного в настройке
-Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.INFO_CHARACTER]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.INFO_HISTORY]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.INFO_MONEY_FROM]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Тип	данных	[Clients.INFO_PUBL]	в базе отличается от заданного в настройке
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.INFO_PUBL]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.INFO_VISA]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Тип	данных	[Clients.JUR_ADDRESS]	в базе отличается от заданного в настройке
-Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.JUR_ADDRESS]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Тип	данных	[Clients.JUR_ADDRESS]	в базе отличается от заданного в настройке
-Msg 50000, Level 1, State 1, Line 272, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.JUR_ADDRESS]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.K013]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.K015]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.K050]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.LOCATION_ID]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.PERSONAL_NAME]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.PERSONAL_NAME]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.PHONES]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.REAL_ADDRESS]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.REG_DATE_COMMIT]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.REG_DATE_TAX]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.KOD_D8]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.NUMBER_SVID]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.REG_NUMBER]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.S080]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.S080BANK]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.S080BankRisk]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Свойства	[Clients.TAX_CODE]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Свойства	[Clients.WORK_ADDRESS]	в базе отличаются от заданных в настройках
-Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
+Свойства	[Clients.TAX_PAYER_CODE]	в базе отличаются от заданных в настройках
+Msg 50000, Level 1, State 1, Line 275, Procedure '', Server 'diam-odbvm'
 Error messages: 0
 Queries count: 3
 
@@ -272,7 +313,7 @@ Queries count: 2
 
 Executing script: Init\Make_Reffers.sql
 Error messages: 0
-Queries count: 24
+Queries count: 29
 
 Executing script: Init\Convert\DropRefferViews.sql
 Error messages: 0
@@ -345,11 +386,11 @@ Queries count: 3
 
 Executing script: Init\Make_MSFO_Tables.sql
 Удаляем значения
-Msg 50000, Level 1, State 1, Line 32, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 32, Procedure '', Server 'diam-odbvm'
 И заголовок
-Msg 50000, Level 1, State 1, Line 41, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 41, Procedure '', Server 'diam-odbvm'
 view MSFO_Tables построено
-Msg 50000, Level 1, State 1, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 2, Procedure '', Server 'diam-odbvm'
 Error messages: 0
 Queries count: 6
 
@@ -359,11 +400,11 @@ Queries count: 2
 
 Executing script: Init\Make_S080Ext.sql
 Удаляем значения
-Msg 50000, Level 1, State 1, Line 42, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 42, Procedure '', Server 'diam-odbvm'
 И заголовок
-Msg 50000, Level 1, State 1, Line 46, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 46, Procedure '', Server 'diam-odbvm'
 Обновление произведено успешно!
-Msg 50000, Level 1, State 1, Line 146, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 146, Procedure '', Server 'diam-odbvm'
 Error messages: 0
 Queries count: 4
 
@@ -394,6 +435,10 @@ Queries count: 3
 Executing script: Init\_InitRestructuring.sql
 Error messages: 0
 Queries count: 4
+
+Executing script: Init\_InitHeap.sql
+Error messages: 0
+Queries count: 2
 
 Executing script: INIT\FILTERS\AGREEMENTS\AgreementsBase.sql
 Error messages: 0
@@ -435,6 +480,10 @@ Executing script: INIT\FILTERS\BILLS\BillsAfterOverTime.sql
 Error messages: 0
 Queries count: 2
 
+Executing script: INIT\FILTERS\BILLS\BillsByBranchsList.sql
+Error messages: 0
+Queries count: 2
+
 Executing script: INIT\FILTERS\BILLS\BillsByCashSymbol.sql
 Error messages: 0
 Queries count: 2
@@ -452,6 +501,10 @@ Error messages: 0
 Queries count: 2
 
 Executing script: INIT\FILTERS\BILLS\BillsByConnotationParam.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\FILTERS\BILLS\BillsByDebitBranchsList.sql
 Error messages: 0
 Queries count: 2
 
@@ -562,6 +615,10 @@ Queries count: 3
 Executing script: INIT\FILTERS\LSWIFT\SWRequestByBillState.sql
 Error messages: 0
 Queries count: 4
+
+Executing script: INIT\FILTERS\LSWIFT\SWRequestByBranchsList.sql
+Error messages: 0
+Queries count: 2
 
 Executing script: INIT\FILTERS\LSWIFT\SWRequestByHaveMT.sql
 Error messages: 0
@@ -799,6 +856,10 @@ Executing script: INIT\FILTERS\TREATY\TreatyOpenedByDate.sql
 Error messages: 0
 Queries count: 3
 
+Executing script: INIT\FILTERS\TREATY\TreatyPersonServiceBoxRefusal.sql
+Error messages: 0
+Queries count: 3
+
 Executing script: INIT\FILTERS\TREATY\TreatyRefuseInsurance.sql
 Error messages: 0
 Queries count: 3
@@ -985,7 +1046,7 @@ Queries count: 3
 
 Executing script: INIT\REPO\_initRepoTableCells.sql
 Расставлено Id таблиц - 0
-Msg 50000, Level 1, State 1, Line 27, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 1, Line 27, Procedure '', Server 'diam-odbvm'
 Error messages: 0
 Queries count: 3
 
@@ -1043,7 +1104,7 @@ Error messages: 0
 Queries count: 3
 
 Executing script: INIT\REPO\MSFO\_InitMSFORules.sql
-2154 rows(s) affected.
+1878 rows(s) affected.
 Error messages: 0
 Queries count: 3
 
@@ -1068,6 +1129,14 @@ Executing script: INIT\REPO\MSFO\_InitMSFOTopicsMappingPr37.sql
 Error messages: 0
 Queries count: 3
 
+Executing script: INIT\REPO\N7\InitRepoForm_CreditApplicantN7.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\REPO\N7\InitRepoTag_CreditApplicantN7.sql
+Error messages: 0
+Queries count: 2
+
 Executing script: Init\NoRezReestrInit.sql
 Error messages: 0
 Queries count: 6
@@ -1089,7 +1158,7 @@ Error messages: 0
 Queries count: 3
 
 Executing script: SYSTEMS\IE3\INIT\Convert.sql
-43 rows(s) affected.
+14 rows(s) affected.
 Error messages: 0
 Queries count: 4
 
@@ -1125,7 +1194,7 @@ Queries count: 4
 
 Executing script: SYSTEMS\TREATYCARDS\INIT\initTransactions.sql
 Error messages: 0
-Queries count: 6
+Queries count: 8
 
 Executing script: SYSTEMS\TREATYCARDS\INIT\initWF.sql
 Error messages: 0
@@ -1137,9 +1206,8 @@ Error messages: 0
 Queries count: 2
 
 Executing script: SYSTEMS\TREATYCARDS\INIT\TreatyCardStates.sql
-0 rows(s) affected.
 Error messages: 0
-Queries count: 3
+Queries count: 2
 
 Executing script: SYSTEMS\TREATYCARDS\INIT\_InitAccAssigment.sql
 Error messages: 0
@@ -1214,7 +1282,7 @@ Error messages: 0
 Queries count: 3
 
 Executing script: Systems\LSW\Init\init0.sql
-16 rows(s) affected.
+199 rows(s) affected.
 0 rows(s) affected.
 1 rows(s) affected.
 0 rows(s) affected.
@@ -1223,7 +1291,7 @@ Executing script: Systems\LSW\Init\init0.sql
 0 rows(s) affected.
 0 rows(s) affected.
 Error messages: 0
-Queries count: 95
+Queries count: 96
 
 Executing script: Systems\LSW\Init\InitRights.sql
 Error messages: 0
@@ -1231,10 +1299,10 @@ Queries count: 4
 
 Executing script: Init\_InitTreaty.sql
 0 rows(s) affected.
-5 rows(s) affected.
+2 rows(s) affected.
 0 rows(s) affected.
 Обновлено значений шаблон/система/клиент для доп.соглашений, [0] шт.
-Msg 50000, Level 1, State 0, Line 41, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 41, Procedure '', Server 'diam-odbvm'
 Error messages: 0
 Queries count: 48
 
@@ -1243,31 +1311,7 @@ Error messages: 0
 Queries count: 13
 
 Executing script: Init\_CntTreaty.sql
-Попытка смены типа реквизита [Treaty.RevalPawnSum] с [7] на [2] при наличии значений, Id [1460]
-Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-Запрещено модифицировать ключевые поля записей
-Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-The transaction ended in the trigger. The batch has been aborted.
-Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
-Попытка смены типа реквизита [Treaty.BOP_COMP] с [7] на [5] при наличии значений, Id [1226]
-Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-Запрещено модифицировать ключевые поля записей
-Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-The transaction ended in the trigger. The batch has been aborted.
-Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
-Попытка смены типа реквизита [Agreements.TreatyLongationHistoryRate] с [9] на [1] при наличии значений, Id [2754]
-Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-Запрещено модифицировать ключевые поля записей
-Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-The transaction ended in the trigger. The batch has been aborted.
-Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
-Попытка смены типа реквизита [treaty.NumberDays] с [5] на [1] при наличии значений, Id [1894]
-Msg 50000, Level 1, State 16, Line 384, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-Запрещено модифицировать ключевые поля записей
-Msg 65638, Level 1, State 16, Line 385, Procedure 'tConnotationListModify', Server 'SRV-SQL-B\E12_CP1251'
-The transaction ended in the trigger. The batch has been aborted.
-Msg 3609, Level 1, State 16, Line 96, Procedure 'sc_SetupCntList', Server 'SRV-SQL-B\E12_CP1251'
-Error messages: 12
+Error messages: 0
 Queries count: 626
 
 Executing script: Init\Make_CredInfoPeriodRef.sql
@@ -1281,114 +1325,112 @@ Queries count: 3
 
 Executing script: Init\_InitTreatyPapers.sql
 Инициализация систем
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Договорная система Id 7166 имеет код не [SP-OPTION-CERT], а [SP-BANK-BOND]
-Msg 50000, Level 1, State 16, Line 131, Procedure 'sc_SetTreatySystem', Server 'SRV-SQL-B\E12_CP1251'
-Договорная система Id 7155 имеет код не [SP-CASH], а [SP-IN-BOND]
-Msg 50000, Level 1, State 16, Line 131, Procedure 'sc_SetTreatySystem', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperCases
-Msg 0, Level 1, State 0, Line 21, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 21, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperOperationGroups
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperOperations
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
+Обратные связи для договоров успешно вставлены!
+Msg 0, Level 1, State 0, Line 70, Procedure '', Server 'diam-odbvm'
 создание связи клиентов Хранитель ЦБ
-Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'diam-odbvm'
 создание связи клиентов Владелец ЦБ
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperTypes
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание общих фильтров для заведение котловых счетов
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Создание справочника EmissionStatuses
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Создание справочника EmitentTypes
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника StockExchangeMembers
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperSubTypes
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника StockExchangePlaces
-Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'diam-odbvm'
 Справочник периодичностей выплат купонов
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Справочник выплаты дохода (рассчитывается исходя из данных эмиссии для резерва)
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Справочник видов гарантии/обеспечения для резерва
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Справочник условий операций для ЦБ
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Создание справочника CNoteReservations
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника NonbankTreatyKinds (CreditGrade)
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperTreatyStatus
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperTreatyStatusJumpTable
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника TypeFunds
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника KindFunds
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника Ratings
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника InternationalRatings
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperCommissions
-Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperActionRegistry
-Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperActionForForward
-Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperLimitLevels
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника EconomicActivities
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperLimitKinds
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника PaperLimitLevelsDefaults
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создания ролей участников фондового рынка	в эмиссии векселей
-Msg 0, Level 1, State 0, Line 11, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 11, Procedure '', Server 'diam-odbvm'
 Типы связей клиентов и договоров
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Установка глобальных параметров
-Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'diam-odbvm'
 Новые линки счетов для договорной подсистемы
-Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'diam-odbvm'
 Заполнение настроечной таблицы импорта Excel
-Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на Шаблоны
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на Clients
-Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на AgreePatterns
-Msg 0, Level 1, State 0, Line 419, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 419, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на TreatyEmissions
-Msg 0, Level 1, State 0, Line 458, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 458, Procedure '', Server 'diam-odbvm'
 Конвертация старых типов эмиссий в новые
-Msg 0, Level 1, State 0, Line 829, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 843, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на Treaty
-Msg 0, Level 1, State 0, Line 841, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 855, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на TreatyPaperRates
-Msg 0, Level 1, State 0, Line 2481, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 2563, Procedure '', Server 'diam-odbvm'
 Установка EventKind
-Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'diam-odbvm'
 Стандартные действия системы SetAgreeActionType
-Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'diam-odbvm'
 Флаг счет клиента в WorkFlowAccounts перводит на новые значения
-Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 2, Procedure '', Server 'diam-odbvm'
 Инициализация ItemKind для эмиссий ЦБ
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Для отчетов в ДКЦПФР (Экспорт в АФР-ТЦП)
-Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'diam-odbvm'
 Настройка бизнес-правил
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Депозитрарий Ценных бумаг НБУ
-Msg 0, Level 1, State 0, Line 64, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 64, Procedure '', Server 'diam-odbvm'
 Дополнение тэгов для печатных форм
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Error messages: 2
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
+Error messages: 0
 Queries count: 51
 
 Executing script: Init\_InitWF.sql
@@ -1409,106 +1451,66 @@ Queries count: 4
 
 Executing script: Init\_InitTreatyCustodian.sql
 Установка глобальных параметров
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание группы по-умолчанию в группах клиентов (CustodianClientGroups)
-Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 12, Procedure '', Server 'diam-odbvm'
 создаем отдельную группу клиентов для быстрого добавления технических клиентов
-Msg 0, Level 1, State 0, Line 27, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 27, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianTreatyTypes
-Msg 0, Level 1, State 0, Line 43, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 43, Procedure '', Server 'diam-odbvm'
 Создание состояний допсоги TreatyStates
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianTreatyAppsTypes
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание шаблонов системы
-Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон APP_ASSETS
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон APP_CLEARING
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон APP_DUAL_SIGNATURE
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон APP_REGISTER_DEPO
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон APP_STATEMENT
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон APP_TARIFF
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон TC_DEPONENT
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон TC_INFO_SERVICE
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на шаблон TC_ISSUER
-Msg 0, Level 1, State 0, Line 89, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Отсутствует описание реквизита [PaperOperation] для задачи [Agreements]
-Msg 65500, Level 1, State 16, Line 111, Procedure 'sc_SearchConnotationList', Server 'SRV-SQL-B\E12_CP1251'
-Ошибка создания установки реквизита на базовый шаблон
-Msg 0, Level 1, State 0, Line 127, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'diam-odbvm'
 создание связи клиентов ИСИ-КУА
-Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'diam-odbvm'
 создание связи клиентов КУА-НПФ
-Msg 0, Level 1, State 0, Line 9, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 9, Procedure '', Server 'diam-odbvm'
 создание связи договоров с доп.согами
-Msg 0, Level 1, State 0, Line 15, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 15, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на Treaty
-Msg 0, Level 1, State 0, Line 23, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 23, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на TreatyOperations
-Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на Clients
-Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 5, Procedure '', Server 'diam-odbvm'
 Доп.реквизиты на TreatyEmissions
-Msg 0, Level 1, State 0, Line 97, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 97, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianSendTypes
-Msg 0, Level 1, State 0, Line 117, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 117, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianDepositories
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianOperationsStatuses
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianGroupUsers
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianBaseOper
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianConditionOptions
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianManagerKinds
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianDividendsKinds
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianBranches
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianRequester
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianPawnee
-Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 7, Procedure '', Server 'diam-odbvm'
 Создание справочника CustodianContractor
-Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 6, Procedure '', Server 'diam-odbvm'
 Настройка бизнес-правил
-Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'diam-odbvm'
 Инициализация операций для Хранитель ЦБ
-Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 4, Procedure '', Server 'diam-odbvm'
 Инициализация тэгов для печатных форм
-Msg 0, Level 1, State 0, Line 8, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 0, Level 1, State 0, Line 8, Procedure '', Server 'diam-odbvm'
 инициализация ItemKinds для каждого вида операций
-Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
-Error messages: 10
+Msg 0, Level 1, State 0, Line 3, Procedure '', Server 'diam-odbvm'
+Error messages: 0
 Queries count: 23
 
 Executing script: Init\_Borg.SQL
@@ -1517,15 +1519,15 @@ Queries count: 2
 
 Executing script: Init\_InitTreatyRuleTypeForms.sql
 Error messages: 0
-Queries count: 122
+Queries count: 127
 
 Executing script: Init\_InitTreatyScenarioTypes.sql
 Error messages: 0
-Queries count: 20
+Queries count: 21
 
 Executing script: Init\_InitTreatyScenarioChecks.sql
 Error messages: 0
-Queries count: 18
+Queries count: 22
 
 Executing script: Init\_InitTreatyScheduleForms.sql
 Error messages: 0
@@ -1560,6 +1562,10 @@ Executing script: Init\_InitSPERolls.sql
 Error messages: 0
 Queries count: 8
 
+Executing script: Init\_InitTreatyRTO.sql
+Error messages: 0
+Queries count: 5
+
 Executing script: Init\_InitBankProductType.sql
 Error messages: 0
 Queries count: 5
@@ -1590,27 +1596,27 @@ Queries count: 3
 
 Executing script: Init\insreff.SQL
 Заглавная запись(OwnerId = 0, Code = 'PB_ONE_ACC') уже существует.
-Msg 50000, Level 1, State 0, Line 68, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 68, Procedure '', Server 'diam-odbvm'
 Запись настроек лоро-счетов(Code = 'PB_ONE_LORO') уже существует.
-Msg 50000, Level 1, State 0, Line 103, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 103, Procedure '', Server 'diam-odbvm'
 Запись настроек ностро-счетов(Code = 'PB_ONE_NOSTRO') уже существует.
-Msg 50000, Level 1, State 0, Line 127, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 127, Procedure '', Server 'diam-odbvm'
 Запись настроек кассовых счетов(Code = 'PB_ONE_CASH') уже существует.
-Msg 50000, Level 1, State 0, Line 151, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 151, Procedure '', Server 'diam-odbvm'
 Запись настройки кода нашего банка(Code = 'PB_BANK_CODE') уже существует.
-Msg 50000, Level 1, State 0, Line 175, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 175, Procedure '', Server 'diam-odbvm'
 Запись настройки наименования нашего банка(Code = 'PB_BANK_NAME') уже существует.
-Msg 50000, Level 1, State 0, Line 199, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 199, Procedure '', Server 'diam-odbvm'
 Запись настройки кода валюты(Code = 'PB_CRNCY_TAG') уже существует.
-Msg 50000, Level 1, State 0, Line 223, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 223, Procedure '', Server 'diam-odbvm'
 Запись настройки флага(Code = 'PB_CLI_FLAG') уже существует.
-Msg 50000, Level 1, State 0, Line 247, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 247, Procedure '', Server 'diam-odbvm'
 Запись настройки флага констант визарда PB_CONN (Code = 'PB_Conn_Const') уже существует.
-Msg 50000, Level 1, State 0, Line 318, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 318, Procedure '', Server 'diam-odbvm'
 Успешное завершение выполенния.
-Msg 50000, Level 1, State 0, Line 333, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 333, Procedure '', Server 'diam-odbvm'
 Завершение работы ...
-Msg 50000, Level 1, State 0, Line 342, Procedure '', Server 'SRV-SQL-B\E12_CP1251'
+Msg 50000, Level 1, State 0, Line 342, Procedure '', Server 'diam-odbvm'
 Error messages: 0
 Queries count: 2
 
@@ -1671,6 +1677,220 @@ Executing script: SYSTEMS\XX\INITS\init_billactionsimport.sql
 Error messages: 0
 Queries count: 2
 
+Executing script: Systems\UGB\Init\_Init_MinFinClientsInfo.sql
+Error messages: 0
+Queries count: 6
+
+Executing script: Init\Tax\InitTaxClassifierServices.sql
+Удалено 9129 записей из справочника.
+Msg 50000, Level 1, State 0, Line 44, Procedure 'sc_DropReffer', Server 'diam-odbvm'
+0 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: Init\Tax\InitTaxUKTZED.sql
+Удалено 13698 записей из справочника.
+Msg 50000, Level 1, State 0, Line 44, Procedure 'sc_DropReffer', Server 'diam-odbvm'
+0 rows(s) affected.
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxForms.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_GlobalSettings.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01001.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01003.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01047.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01081.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01103.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01106.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01113.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01114.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01115.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01116.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01117.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01118.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01301.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01302.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01303.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01304.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01305.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01306.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01307.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01309.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01310.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01312.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01313.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01317.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01471.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01472.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01803.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01806.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01813.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01814.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01815.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01816.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01817.sql
+Error messages: 0
+Queries count: 4
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J01818.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J02001.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J02005.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J02151.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J02993.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J03021.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J03121.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J05001.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J06020.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J06201.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J07002.sql
+Error messages: 0
+Queries count: 3
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J12010.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxFormTags_J12012.sql
+Error messages: 0
+Queries count: 2
+
+Executing script: INIT\TAX\PRINTINGFORMS\_InitTaxPrintingFormsManagers.sql
+Error messages: 0
+Queries count: 3
+
 ОШИБКА: Установка обновлений завершилась с ошибками!
-Отправьте логи обновления (файл 'D:\Scrooge3-Versions\3.0\_stable\3.12\3.12.7.0\Setup.Database\UpdateLogs\2017.02.24_14.36.59\update_log.txt') разработчикам.
+Отправьте логи обновления (файл 'C:\Setups\Sc3\3.13.7.0\Setup.Database\UpdateLogs\2017.03.13_19.09.38\update_log.txt') разработчикам.
 
