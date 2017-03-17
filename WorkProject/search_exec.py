@@ -2,6 +2,7 @@ import write as w
 
 
 def search_for_parse_exec(lines):
+    """Search for key words in file and write into buffer"""
     apendix = "\n=======================================================\n"
     messages = []
     for index, line in enumerate(lines):

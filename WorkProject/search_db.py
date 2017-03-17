@@ -2,6 +2,7 @@ import write as w
 
 
 def search_for_parse_db(lines):
+    """Search for key words in file and write into buffer"""
     apendix = "\n=======================================================\n"
     messages = []
     for index, line in enumerate(lines):
@@ -16,4 +17,4 @@ def search_for_parse_db(lines):
                 w.write_log_to_buffer(
                     lines, index_from, index_to, messages, apendix
                     )
-    return messagess
+    return messages
