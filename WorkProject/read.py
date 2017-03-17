@@ -1,4 +1,3 @@
-import write as w
 import search_exec as se
 import search_db as db
 
@@ -7,7 +6,6 @@ def read_logs(filename):
     inputfile = filename.replace('"', ' ')
     inputfile = inputfile.strip()
     outputfile = 'log_analysis.txt'
-    messages = []
 
     try:
         with open(inputfile) as file_object:
