@@ -3,7 +3,7 @@ import write as w
 
 def search_for_parse_exec(lines):
     """Search for key words in file and write into buffer"""
-    apendix = "\n=======================================================\n"
+    appendix = "\n=======================================================\n"
     messages = []
     for index, line in enumerate(lines):
         begin_line = line.find("Executing script:")
@@ -15,6 +15,6 @@ def search_for_parse_exec(lines):
             er_count = int(line[end_line+16:end_line+17])
             if er_count != 0:
                 w.write_log_to_buffer(
-                    lines, index_from, index_to, messages, apendix
+                    lines, index_from, index_to, messages, appendix
                     )
     return messages

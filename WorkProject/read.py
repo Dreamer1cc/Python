@@ -1,6 +1,7 @@
 import search_exec as se
 import search_db as db
 
+
 def read_logs(filename):
     """function return file, that contains only errors from logs"""
     inputfile = filename.replace('"', ' ')
@@ -19,5 +20,5 @@ def read_logs(filename):
 
         with open(outputfile, 'w') as file_object:
             for message in messages:
-                file_object.write(message) 
+                file_object.write(message)
         print("Errors wrote into the file " + outputfile)
