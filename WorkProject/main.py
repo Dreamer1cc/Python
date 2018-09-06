@@ -9,8 +9,6 @@ window.geometry('300x200')
 
 '''Оформление окна'''
 canvas = Canvas(window, width=300, height=200)
-# canvas.pack(side='right')
-# asdasdasd
 
 '''Надпись на экране(ярлык)'''
 label = Label(window, text='Путь к файлу: ')
